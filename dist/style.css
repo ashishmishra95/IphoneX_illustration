@@ -1,0 +1,67 @@
+:root{
+  --bg-color : #ced4da;
+  
+}
+body{
+  background-color: var(--bg-color);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.iphone-body{
+  position:relative;
+  display:flex;
+  justify-content:center;
+  margin:10px;
+  width:280px;
+  height:540px; 
+  background: #fff;
+  border-radius:35px;
+  box-shadow: 0 0 15px inset rgba(0,0,0,.2),0 40px 100px rgba(0,0,0,0.4);
+  transition: 2s;
+  }
+.iphone-body:before{
+  content:'';
+  position:relative;
+  top:15px;
+  left:1px;
+  width:calc(100% - 30px);
+  height:calc(100% - 30px);
+  background:#262626;
+  border-radius:25px;
+  box-shadow:0 0 20px inset rgba(0,0,0,.2);
+  
+}
+.iphone-body:after{
+  content:'';
+  position:absolute;
+  top:15px;
+  width:140px;
+  height:14px;
+  background:#fff;
+  border-bottom-left-radius:15px;
+  border-bottom-right-radius:15px;
+  
+}
+.iphone-baseline:after{
+  content:'';
+  position:absolute;
+  width:140px;
+  height:3px;
+  background:#fff;
+  top:510px;
+  left:72px;
+  border-radius:30px;
+  
+}
+.iphone-body:hover:before{
+  content:'';
+  cursor:pointer;
+background:url("https://i.pinimg.com/736x/dd/5f/78/dd5f7827446c4cba575a18934790d5c8.jpg");
+  background-size:cover;
+}
+.iphone-body:hover{
+  transform:rotate(360deg);
+ 
+  
+}
